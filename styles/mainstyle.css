@@ -1,19 +1,45 @@
+html{
+    --primary-color: #d8a47f;
+    --secondary-color: #232020;
+    --third-color: #93b7be;
+}
+
 body{
-    background-color: beige;
+    background-color: white;
     margin: 0px
 }
 
 .navbar{
-    padding: 10px;
-    background-color: rgb(227, 204, 127);
-    position: fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    color: white;
+    background-color: var(--secondary-color);
+    /* position: fixed; */
+    flex: row;
+    gap: 33vw;
+    display: flex;
     top: 0;
-    width: 100%;
+    justify-content: center;
+}
+
+.image{
+    background-color: white;
+    grid-area: image;
+}
+
+.hero-text{
+    font-size: x-large;
+    grid-area: herotext;
 }
 
 .hero{
-    background-color: rgb(227, 204, 127);
     padding: 10px;
-    border-radius: 5px;
-    margin-top: 50px;
+    max-height: 50vh;
+    min-height: 50vh;
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-areas: "image herotext";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
 }
