@@ -1,7 +1,7 @@
 html{
-    --primary-color: #d8a47f;
-    --secondary-color: #232020;
-    --third-color: #93b7be;
+    --primary-color: #74c3fb;
+    --secondary-color: #EDEBE9
+    
 }
 
 body{
@@ -13,8 +13,7 @@ body{
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 10px;
-    color: white;
-    background-color: var(--secondary-color);
+    color: black;
     /* position: fixed; */
     flex: row;
     gap: 33vw;
@@ -23,23 +22,45 @@ body{
     justify-content: center;
 }
 
-.image{
-    background-color: white;
+.image-container{
     grid-area: image;
+    max-width: 100%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.hero #luffy{
+ position: absolute;
+ scale: 50%;
+ top: -20px;
+ left: 30%;
+ rotate: 30deg;
+}
+
+.image-container #selfie{
+    height: 80%;
+    object-fit: contain;
+    border: 15px solid var(--primary-color);
+    border-radius: 50px 0px;
 }
 
 .hero-text{
     font-size: x-large;
     grid-area: herotext;
+    color: #1098F7;
 }
 
 .hero{
     padding: 10px;
-    max-height: 50vh;
+    margin-top: 50px;
+    max-height: 80vh;
     min-height: 50vh;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     display: grid;
     grid-template-areas: "image herotext";
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
+    position: relative;
 }
