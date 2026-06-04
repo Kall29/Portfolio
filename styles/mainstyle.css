@@ -116,7 +116,6 @@ body{
     color: var(--muted-color);
     font-size: 0.95rem;
     line-height: 1.5;
-    min-height: 6em; /* reserve ~4 lines so every card is uniform */
 }
 
 .project-tags{
@@ -139,9 +138,7 @@ body{
 .project-links{
     display: flex;
     gap: 14px;
-    margin-top: auto;
-    padding-top: 12px;
-    min-height: 1.2em;
+    margin-top: 12px;
 }
 
 .project-links a{
