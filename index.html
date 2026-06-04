@@ -7,18 +7,92 @@
     <link rel="stylesheet" href="./styles/mainstyle.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div>Home</div>
-        <div>About me</div>
-        <div>Work</div>
-    </nav>
-    <div class="hero">
-        <div class="image-container">
-            <img id="selfie" src="images/wout.jpg" alt="wout">
+    <header class="profile">
+        <img class="profile-image" src="images/wout-avatar.jpg" alt="Wout">
+        <div class="profile-info">
+            <h1 class="profile-name">Wout Schelstraete</h1>
         </div>
-        <h1 class="hero-text">testing</h1>
-        <img id="luffy" src="images/luffy.png">
-    </div>
+    </header>
+
+    <section class="projects" id="work">
+        <h2 class="projects-title">My Projects</h2>
+        <div class="projects-grid">
+            <!-- Project card — duplicate this block for each project -->
+            <article class="project-card">
+                <img class="project-image" src="images/kingdomino.png" alt="Project screenshot">
+                <div class="project-body">
+                    <h3 class="project-name">Kingdomino</h3>
+                    <p class="project-description">A digitised board game, where 3-4 players aim to expand their kingdom efficiently by strategically placing randomized tiles adjacent to its castle or other connected tiles.</p>
+                    <ul class="project-tags">
+                        <li>Java</li>
+                        <li>JavaFX</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <img class="project-image" src="images/delaware_shopfloor.png" alt="Project screenshot">
+                <div class="project-body">
+                    <h3 class="project-name">Delaware Shopfloor Webapp</h3>
+                    <p class="project-description">A management/information platform where metrics or statuses on production facilities and their machines could be consulted, created for the company Delaware as a proof of concept.</p>
+                    <ul class="project-tags">
+                        <li>NextJS</li>
+                        <li>Tailwindcss</li>
+                        <li>Javascript</li>
+                        <li>Java</li>
+                        <li>JavaFX</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <img class="project-image" src="images/VMM_meettoestel.png" alt="Project screenshot">
+                <div class="project-body">
+                    <h3 class="project-name">VMM management application</h3>
+                    <p class="project-description">A webapplication made for the VMM. This application helps manage the location and state of different kind of devices used in the field.</p>
+                    <ul class="project-tags">
+                        <li>.NET</li>
+                        <li>C#</li>
+                        <li>Blazor</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <img class="project-image" src="images/maeve_webapp.png" alt="Project screenshot">
+                <div class="project-body">
+                    <h3 class="project-name">Ask Maeve Webapp</h3>
+                    <p class="project-description">A webapp made for students. Generate summaries, flashcards and exercises based on your documents.</p>
+                    <ul class="project-tags">
+                        <li>NextJS</li>
+                        <li>Python</li>
+                        <li>Typescript</li>
+                        <li>Tailwindcss</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://www.ask-maeve.com/" target="_blank" rel="noopener">Website</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <img class="project-image" src="images/placeholder.png" alt="Project screenshot">
+                <div class="project-body">
+                    <h3 class="project-name">Project Five</h3>
+                    <p class="project-description">A short description of what this project does and the problem it solves.</p>
+                    <ul class="project-tags">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener">Live demo</a>
+                        <a href="#" target="_blank" rel="noopener">Source code</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
 
 </body>
 </html>
