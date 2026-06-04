@@ -81,6 +81,23 @@ body{
     background-color: var(--primary-color);
 }
 
+.project-collage{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 180px;
+    gap: 3px;
+    background-color: var(--primary-color);
+    overflow: hidden;
+}
+
+.project-collage img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: top;
+    min-height: 0;
+}
+
 .project-body{
     padding: 16px;
     display: flex;
@@ -98,7 +115,8 @@ body{
     margin: 0;
     color: var(--muted-color);
     font-size: 0.95rem;
-    flex: 1;
+    line-height: 1.5;
+    min-height: 6em; /* reserve ~4 lines so every card is uniform */
 }
 
 .project-tags{
@@ -121,7 +139,9 @@ body{
 .project-links{
     display: flex;
     gap: 14px;
-    margin-top: 4px;
+    margin-top: auto;
+    padding-top: 12px;
+    min-height: 1.2em;
 }
 
 .project-links a{
